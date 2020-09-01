@@ -20,8 +20,8 @@ while len < 5000000
   data += line
   len += line.length
 end
-data = data.bytes.map{|x| (x % 2 == 1) ? '1' : '0' }.compact.join(nil)
-#data = data.unpack("B*")[0]
+#data = data.bytes.map{|x| (x % 2 == 1) ? '1' : '0' }.compact.join(nil)
+data = data.unpack("B*")[0]
 
 Ais31.procedure_a(data) if t == 'A' || t == 'ALL'
 Ais31.procedure_b(data) if t == 'B' || t == 'ALL'
