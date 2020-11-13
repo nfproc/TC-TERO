@@ -50,6 +50,14 @@ To synthesize the circuit, make a Vivado project targeting Arty,
 add *.v as design sources, add arty.xdc as a constraint,
 and follow an ordinary logic synthesis flow.
 
+If you don't have physical access to the board (i.e. you are using
+a remote environment such as the ACRi Room), you can access the
+board virtually using the virtual I/O (VIO) IP core. In this case,
+remove top.v and arty.xdc in the `hdl_source` directory from the
+project. Instead, add the all files in the `hdl_source/using_vio`
+directory (which include an XCI IP file named *VIO_ACRi.xci*)  to
+the project.
+
 Since the baud rate of the UART sender is set to 3,000,000 bps,
 the baud rate of a terminal emulator (such as Tera Term) must be
 configured as well.
@@ -258,7 +266,7 @@ The counter mode (or TRNG mode) is used with that parameter.
     For example, to see the distribution of the counter values, enter the
     following command. You will see a mountain-shaped distribution.
 
->     ruby 8b_graph.rb data.bi
+>     ruby 8b_graph.rb data.bin
 
 -----------------------------------------------------------------------
 
