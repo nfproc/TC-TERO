@@ -1,5 +1,5 @@
 # data collection from serial port, Python alternative
-# 2019-11-14 -> 2020-08-24 Naoki F., AIT
+# 2019-11-14 -> 2020-11-13 Naoki F., AIT
 # New BSD License is applied. See COPYING file for details.
 
 import sys
@@ -15,7 +15,7 @@ if len(sys.argv) != 3:
 
 file_name = sys.argv[1]
 data_size = int(sys.argv[2])
-prog_size = data_size / 50
+prog_size = data_size // 50
 
 # Open Serial Port and Output File
 try:
@@ -38,11 +38,11 @@ while total < data_size:
     if len(data) == 0:
         continue
     out.write(data)
-    if total / prog_size != (total + len(data)) / prog_size:
+    if total // prog_size != (total + len(data)) // prog_size:
         print('#', file=sys.stdout, end='')
         sys.stdout.flush()
     total += len(data)
-    if start is None and total >= data_size / 2:
+    if start is None and total >= data_size // 2:
         start = time.time()
 
 elapsed = time.time() - start
