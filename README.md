@@ -127,6 +127,7 @@ unbiased (PASS) or not (FAIL).
 - Argument 2: A data file collected with the TRNG mode
 
 > ruby ais_test.rb B out.dat ("output.txt" is created automatically.)
+
 > ruby ais_test.rb B out.dat -o text-file-name ("text-file-name" is created.)
 
 reference directory
