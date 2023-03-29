@@ -1,6 +1,10 @@
 TC-TERO: Three-path Configurable Transition Effect Ring Oscillator
 ==================================================================
 
+**NOTE**: If you are using the PYNQ board instead of the Arty board,
+you can adopt a more convenient <a href="https://github.com/nfproc/TRNG_IP/">TRNG IP</a> core. Copy the files in the
+samples/TC-TERO folder to the core/src/user folder.
+
 Abstract
 --------
 
