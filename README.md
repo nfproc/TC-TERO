@@ -10,8 +10,8 @@ on the following article:
 
 > Naoki Fujieda, On the feasibility of TERO-based true random number
 > generator on Xilinx FPGAs, 30th International Conference on
-> Field-Programmable Logic and Applications (FPL 2020), accepted as
-> short paper (08/2020).
+> Field-Programmable Logic and Applications (FPL 2020), pp. 103-108,
+> 2020, DOI: <a href="https://doi.org/10.1109/FPL50879.2020.00027">10.1109/FPL50879.2020.00027</a>.
 
 The repository is organized by three directories as follows.
 
