@@ -281,7 +281,7 @@ Copyright
 
 All of the files in the `hdl_source` and `scripts` directories are
 developed by <a href="https://aitech.ac.jp/~dslab/nf/index.en.html">Naoki FUJIEDA</a>.
-They are licensed under the New BSD license.
+They are dual-licensed under the New BSD license and a commercial license.
 See the COPYING file for more information.
 
 Copyright (C) 2019-2020 Naoki FUJIEDA. All rights reserved.

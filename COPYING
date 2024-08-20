@@ -1,3 +1,12 @@
+The hardware design (hdl_source) and the evaluation software (scripts) in
+this repository are currently dual-licensed under the New BSD license and
+a commercial license, which does not require licensee to retain any
+copyright notices. Contact the author for more information about the
+commercial license.
+
+The licensing terms of the New BSD license are as follows.
+
+----
 TC-TERO: Three-path Configurable Transition Effect Ring Oscillator
 Copyright (C) 2019-2020 Naoki FUJIEDA. All rights reserved.
 
